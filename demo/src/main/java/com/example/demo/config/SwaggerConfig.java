@@ -11,7 +11,7 @@ public class SwaggerConfig {
     public OpenAPI openAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Kakao Login API")
+                        .title("Kakao Login")
                         .description("카카오 로그인 + JWT 발급")
                         .version("1.0.0"));
     }

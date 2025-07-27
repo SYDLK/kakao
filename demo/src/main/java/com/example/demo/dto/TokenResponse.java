@@ -1,7 +1,14 @@
 package com.example.demo.dto;
 
-public record TokenResponse(
-        String username,
-        String accessToken,
-        String refreshToken
-){}
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+
+public class TokenResponse {
+    private String nickname;
+    private String accessToken;
+    private String refreshToken;
+    private String kakaoAccessToken;
+}
