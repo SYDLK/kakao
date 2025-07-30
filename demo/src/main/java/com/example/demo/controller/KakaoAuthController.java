@@ -6,7 +6,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.view.RedirectView;
+
 
 @RestController
 @RequiredArgsConstructor
@@ -14,8 +14,6 @@ import org.springframework.web.servlet.view.RedirectView;
 public class KakaoAuthController {
 
     private final KakaoAuthService kakaoAuthService;
-
-
 
     @Operation(summary = "카카오 로그인")
     @GetMapping("/kakao/callback")

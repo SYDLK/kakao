@@ -78,6 +78,7 @@ public class KakaoAuthService {
 
         return new TokenResponse(nickname, accessToken, refreshToken, kakaoAccessToken);
     }
+
     public ResponseEntity<String> kakaoLogout(String bearerToken) {
         String logoutUrl = "https://kapi.kakao.com/v1/user/logout";
 
